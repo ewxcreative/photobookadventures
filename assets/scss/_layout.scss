@@ -1,0 +1,80 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: 900px) {
+  article.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  article.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  section.location-explore {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    grid-template-areas: "location-list location-map location-from";
+  }
+
+  div.watch-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px;
+    gap: 30px;
+  }
+
+  section.grid-base-stockist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  article.top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  article.bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  section.grid-base-stockist {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  div.watch-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  div.watch-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 30px;
+  }
+}

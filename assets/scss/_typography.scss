@@ -1,0 +1,174 @@
+a {
+  text-decoration: none;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--brand-color-02);
+  transition: color 400ms;
+}
+
+nav a.nav-01:hover {
+  color: var(--brand-color-01);
+  cursor: pointer;
+}
+
+nav a.nav-02:hover {
+  color: var(--brand-color-05);
+  cursor: pointer;
+}
+
+nav a.nav-03:hover {
+  color: var(--brand-color-04);
+  cursor: pointer;
+}
+
+nav a.nav-04:hover {
+  color: var(--brand-color-06);
+  cursor: pointer;
+}
+
+p.top-arrow {
+  text-transform: initial;
+  font-weight: bold;
+  color: var(--brand-color-02);
+  transition: color 400ms;
+}
+
+p.top-arrow:hover {
+  color: var(--brand-color-04);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "cinema-script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  color: white;
+  margin: 150px 0px 100px 0px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 3px var(--brand-color-02);
+}
+
+h2 {
+  font-family: good-karma-smooth-upright, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 3px var(--brand-color-02);
+}
+
+h2::first-letter,
+h3::first-letter,
+nav a::first-letter,
+.link-button::first-letter,
+.btn-add::first-letter {
+  text-transform: capitalize;
+}
+
+h2.b-color-02 {
+  font-family: good-karma-smooth-upright, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  color: var(--brand-color-02);
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 3px #ffffff;
+  margin: 0 0 30px 0;
+}
+
+h3 {
+  font-family: "semplicitapro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  color: var(--brand-color-02);
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  column-count: 1;
+  list-style-position: inside;
+  line-height: 1.5;
+  text-transform: capitalize;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+a.link-button {
+  font-family: "semplicitapro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px ;
+  padding: 0 25px;
+}
+
+button.btn-add {
+  font-family: "semplicitapro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    font-family: good-karma-smooth-upright, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--brand-color-02);
+  }
+  a.link-button {
+    font-family: "semplicitapro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px ;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 500px) {
+  ul {
+    column-count: 2;
+    column-gap: 30px;
+    list-style-position: inside;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    column-count: 1;
+    list-style-position: inside;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+}
